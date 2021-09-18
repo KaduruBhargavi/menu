@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.menu-bar{
+    background: #2760cc;
+    text-align: center;
+    width: 100vw;
+
+}
+.menu-bar ul{
+    list-style-type: none;
+    color: white;
+    display: inline-flex;
+    cursor: pointer;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    font-weight: bold;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active,li:hover
+{
+    background-color: #32abaf;
+    border-radius: 3px;
+}
+.menu-bar .fa{
+    margin-right: 3px;
+}
+.sub-menu1{
+    display: none;
+}
+li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    background-color: #2760cc;
+    text-align: center;
+    margin-top:15px;
+    margin-left: -15px;
+}
+li:hover .sub-menu1 ul{
+    display: block;
+    margin: 10px;
+}
+li:hover .sub-menu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li .sub-menu1 ul li a:hover{
+
+    background-color: #32abaf;
+
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu2{
+    display: none;
+}
+.hover-me:hover .sub-menu2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: #2760cc ;
+}
+#icon{
+     color: white;
+     font-size: 30px;
+     line-height: 80px;
+     float: right;
+     margin-right: 40px;
+     cursor: pointer;
+     display: none;
+}
+
+
+    
